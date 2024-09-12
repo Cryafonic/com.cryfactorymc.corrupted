@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "cryfactorymc",
+	"version": "${version}",
+	"name": "cryfactorymc",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cryfactorymc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cryfactorymc.corrupted.Cryfactorymc"
+		],
+		"fabric-datagen": [
+			"com.cryfactorymc.corrupted.CryfactorymcDataGenerator"
+		],"client": [
+			"com.cryfactorymc.corrupted.CryfacotrymcClient"
+		]
+	},
+	"mixins": [
+		"cryfactorymc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
